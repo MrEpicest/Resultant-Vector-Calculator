@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+.button {
+	background-color: orange;
+	color: white;
+	font-size:14px;
+	font-family: arial black;
+	border: none;
+	padding: 10px;
+	border-radius: 40px;
+	cursor: pointer;
+}
+
+#enter {
+	background-color: orange;
+	color: white;
+	font-size:16px;
+	font-family: arial black;
+	border-style: solid;
+	border-color: dimgrey;
+	border-width: 2px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.input {
+	border-width: 3.5px;
+	border-style: solid;
+	border-color: orange;
+	padding:5px;
+	font-size: 15px
+		
+	
+}
+
+#outputF {
+	margin-right: 20px;
+}
+
+.label {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 18px
+}
+.output {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+#equal {
+	margin: 10px;
+	font-size: 19px;
+}
+
+#plus {
+	font-size: 26px;
+	padding:13px;
+}
+
+.link {
+	font-family: Arial;
+	font-size: 12px;
+	color: orange;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#clear {
+	margin-left: 10px;
+}

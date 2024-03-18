@@ -1,0 +1,137 @@
+// JavaScript Document
+	
+	var mode = "DEG";
+	var fa;
+	var fb;
+	var aa;
+	var ab;
+	var numf;
+	var numa;
+	var outf = document.getElementById("outputF");
+	var outa = document.getElementById("outputA");
+	var x;
+	var y;
+	var enter = false;
+	var in1 = document.getElementById("forceA");
+	var in2 = document.getElementById("angleA");
+	var in3 = document.getElementById("forceB");
+	var in4 = document.getElementById("angleB");
+	
+
+		
+		document.getElementById("mode").onclick = function(){
+			
+			if(mode == "DEG"){
+			mode = "RAD";
+			document.getElementById("mode").innerHTML = mode;
+			} else {
+			mode = "DEG";
+			document.getElementById("mode").innerHTML = mode;
+			}
+			
+			if(enter == true){
+				calculate();
+			}
+			
+		};
+
+
+		document.getElementById("enter").onclick = function(){
+			enter = true;
+			calculate();
+		}
+		
+		document.body.onkeydown = function(){
+			
+			if(event.key == "Enter"){
+				enter = true;
+				calculate();
+			}
+		}
+		
+		document.getElementById("clear").onclick = function(){
+			enter = false;
+			in1.value = "";
+			in2.value = "";
+			in3.value = "";
+			in4.value = "";
+			outf.innerHTML = "";
+			outa.innerHTML = "";
+		}
+		
+		
+			
+		var calculate = function(){
+						
+			getValues();
+			
+			getXY();
+			
+			
+				numf = Math.sqrt(Math.pow(x,2) + Math.pow(y,2));
+			
+				if(mode == "DEG"){
+					
+				if((Math.sign(x) == 1) && (Math.sign(y) == 1)){
+					
+				numa = Math.atan(Math.abs(y)/Math.abs(x))*180/Math.PI;
+					
+				} else if((Math.sign(x) == -1) && (Math.sign(y) == 1)){
+					
+				numa = 180-Math.atan(Math.abs(y)/Math.abs(x))*180/Math.PI;
+					
+				} else if((Math.sign(x) == -1) && (Math.sign(y) == -1)){
+					
+				numa = 180+Math.atan(Math.abs(y)/Math.abs(x))*180/Math.PI;
+					
+				} else if((Math.sign(x) == 1) && (Math.sign(y) == -1)){
+					
+				numa = 360-Math.atan(Math.abs(y)/Math.abs(x))*180/Math.PI;
+					
+				}
+				} else {
+					
+				if((Math.sign(x) == 1) && (Math.sign(y) == 1)){
+					
+				numa = Math.atan(Math.abs(y)/Math.abs(x));
+					
+				} else if((Math.sign(x) == -1) && (Math.sign(y) == 1)){
+					
+				numa = Math.PI-Math.atan(Math.abs(y)/Math.abs(x));
+					
+				} else if((Math.sign(x) == -1) && (Math.sign(y) == -1)){
+					
+				numa = Math.PI+Math.atan(Math.abs(y)/Math.abs(x));
+					
+				} else if((Math.sign(x) == 1) && (Math.sign(y) == -1)){
+					
+				numa = 2*Math.PI-Math.atan(Math.abs(y)/Math.abs(x));
+					
+				}
+				}
+			
+				outf.innerHTML = Math.round(numf*1000)/1000;
+				outa.innerHTML = Math.round(numa*1000)/1000;
+			
+		};
+
+		var getValues = function(){
+			fa = document.getElementById("forceA").value;
+			fb = document.getElementById("forceB").value;
+			aa = document.getElementById("angleA").value;
+			ab = document.getElementById("angleB").value;
+		};
+		
+		var getXY = function(){
+			
+			if(mode == "DEG"){
+				x = fa*Math.cos(aa*Math.PI/180) + fb*Math.cos(ab*Math.PI/180);
+				y = fa*Math.sin(aa*Math.PI/180) + fb*Math.sin(ab*Math.PI/180);
+			} else {
+				x = fa*Math.cos(aa) + fb*Math.cos(ab);
+				y = fa*Math.sin(aa) + fb*Math.sin(ab);
+			}
+			
+			
+		};
+
