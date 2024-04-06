@@ -4,7 +4,7 @@ During my junior year of high school, in my precalculus class, we learned how to
 
 **THE PROGRAM WORKS AS FOLLOWS:**
 
-The equation this program is based on for calculating a resultant vector is V = ||F1||(cos(a)i + sin(a)j) + ||F2||(cos(b)i + sin(b)j) where ||F1|| and ||F2|| are the magnitudes (forces) of the two vectors, and a and b are the corresponding angles of projection for each vector as would be written on a xy-coordinate plane. i and j are simply markers for the x and y components of the vectors, the cosine term being the x and the sine term being the y.
+The equation this program is based on for calculating a resultant vector is V = ||F1||(cos(a)i + sin(a)j) + ||F2||(cos(b)i + sin(b)j) where ||F1|| and ||F2|| are the magnitudes (forces) of the two vectors, and a and b are the corresponding angles of trajection for each vector as would be written on a xy-coordinate plane. i and j are simply markers for the x and y components of the vectors, the cosine term being the x and the sine term being the y.
 
 When the four values mentioned above are inputted into the program, they are immediately put into an altered version of the equation above that can be arrived at by distributing the magnitudes through and grouping the i terms together and the j terms together: V = (||F1||cos(a) + ||F2||cos(b))i + (||F1||sin(a) + ||F2||sin(b))j. Notice i and j are factored out as well so that it takes on the look of the equation for a single vector.
 
