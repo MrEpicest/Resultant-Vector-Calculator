@@ -1,6 +1,6 @@
-**MY INSPIRATION: (😁)**
+**MY INSPIRATION:**
 
-During my junior year of high school, in my precalculus class, we learned how to add the equations of two vectors to get that of a resultant vector. During that unit, I remember wondering, "What if I just wrote my own program that could do all this for me?" I didn't end up doing it during that unit, but the following summer, the summer of my senior year, I hadn't forgotten about the idea, and I decided to start working on it to challenge my programming skills. I probably spent more time on it than I should have heheh, but I gotta say I was pretty happy with the result. 😊
+During my junior year of high school, in my precalculus class, we learned how to add the equations of two vectors to get that of a resultant vector. During that unit, I remember wondering, "What if I just wrote my own program that could do all this for me?" I didn't end up doing it during that unit, but the following summer, the summer of my senior year, I hadn't forgotten about the idea, and I decided to start working on it to challenge my programming skills. I probably spent more time on it than I should have heheh, but I gotta say I was pretty happy with the result.
 
 **THE PROGRAM WORKS AS FOLLOWS:**
 
